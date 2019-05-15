@@ -84,13 +84,6 @@ body {
   font-size: 14px;
 }
 
-.no-account .sign-up_link {
-  color: #727682;
-  font-size: 14px;
-  text-decoration: underline;
-  font-family: 'ProximaNova-Semibold';
-}
-
 .category-card {
   max-width: 320px;
   min-width: 320px;
@@ -261,132 +254,6 @@ body {
   background-image: url(../img/icons/inputs/error.svg);
 }
 
-.sign-in-container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 100vh;
-}
-
-.verification-form {
-  background-color: #fff;
-  max-width: 460px;
-  padding: 50px 60px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.verification-form.create-account, .verification-form.forgot-pass, .verification-form.sent-link {
-  position: relative;
-}
-
-.verification-form.create-account .h3, .verification-form.forgot-pass .h3, .verification-form.sent-link .h3 {
-  margin-bottom: 32px;
-}
-
-.verification-form.create-account .arrow-link-back, .verification-form.forgot-pass .arrow-link-back, .verification-form.sent-link .arrow-link-back {
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  color: #BDBDBD;
-}
-
-.verification-form.reset-pass .h3 {
-  margin-bottom: 32px;
-}
-
-.verification-form.sent-link .subtitle {
-  color: #ADAFB6;
-  margin: 32px auto;
-  display: block;
-  text-align: center;
-}
-
-.verification-form.sent-link .make {
-  list-style: none;
-  padding-left: 0;
-  color: #727682;
-  margin-bottom: 32px;
-}
-
-.verification-form .link-back_sign-in {
-  display: block;
-  text-align: center;
-  font-weight: 600;
-  color: #727682;
-  text-decoration: underline;
-}
-
-.verification-form .form-group {
-  width: 340px;
-}
-
-.verification-form .form-group-wraper {
-  padding: 48px 0;
-}
-
-.verification-form .form-group-wraper .forgot-pass-link {
-  text-align: right;
-  display: block;
-  font-weight: 600;
-  color: #727682;
-  text-decoration: underline;
-}
-
-.verification-form .form-group .form-control {
-  height: 44px;
-  margin-bottom: 24px;
-}
-
-.verification-form .btn {
-  border: 1px solid #000;
-  height: 44px;
-  margin-bottom: 24px;
-}
-
-.verification-form .sign-in-social .social-links {
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.verification-form .sign-in-social .social-link_fb,
-.verification-form .sign-in-social .social-link_gl {
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 48px;
-  height: 48px;
-}
-
-.verification-form .sign-in-social .social-link_fb {
-  background-image: url(../img/icons/sign-in-form/icon-facebook6.svg);
-  margin-right: 12px;
-}
-
-.verification-form .sign-in-social .social-link_gl {
-  background-image: url(../img/icons/sign-in-form/icon-google-plus.svg);
-}
-
-.verification-form .text {
-  color: #ADAFB6;
-  text-align: center;
-}
-
-.verification-form .no-account {
-  text-align: center;
-  margin-top: 50px;
-}
-
 /* Remove outline on the forms and links */
 * :active,
 :hover,
@@ -460,6 +327,26 @@ input {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 32px;
+}
+
+.sign-in-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.verification-form {
+  background-color: #fff;
+  max-width: 460px;
 }
 
 @media screen and (min-width: 578px) {

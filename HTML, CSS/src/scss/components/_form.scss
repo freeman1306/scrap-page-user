@@ -1,0 +1,140 @@
+// Sign in Form
+
+.sign-in-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.verification-form {
+    background-color: #fff;
+    max-width: 460px;
+    padding: 50px 60px;
+    box-sizing: border-box;
+
+
+
+    // Create account form
+
+    &.create-account,
+    &.forgot-pass,
+    &.sent-link {
+        position: relative;
+
+        .h3 {
+            margin-bottom: 32px;
+        }
+
+        .arrow-link-back {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            color: #BDBDBD;
+        }
+    }
+
+    // Reset Pass
+    &.reset-pass {
+        .h3 {
+            margin-bottom: 32px;
+        }
+    }
+
+    &.sent-link {
+        .subtitle {
+            color: $light-text;
+            margin: 32px auto;
+            display: block;
+            text-align: center;
+        }
+
+        .make {
+            list-style: none;
+            padding-left: 0;
+            color: $body-text;
+            margin-bottom: 32px;
+        }
+    }
+
+
+    // Forgot Password Form
+
+
+
+    .link-back_sign-in {
+        display: block;
+        text-align: center;
+
+        font-weight: 600;
+        color: $body-text;
+        text-decoration: underline;
+    }
+
+
+
+    .form-group {
+        width: 340px;
+
+        &-wraper {
+            padding: 48px 0;
+
+            .forgot-pass-link {
+                text-align: right;
+                display: block;
+                font-weight: 600;
+                color: $body-text;
+                text-decoration: underline;
+            }
+        }
+
+        .form-control {
+            height: 44px;
+            margin-bottom: 24px;
+        }
+    }
+
+    .btn {
+        border: 1px solid #000;
+        height: 44px;
+        margin-bottom: 24px;
+    }
+
+    .sign-in-social {
+        .social-links {
+            justify-content: center;
+        }
+
+        .social-link_fb,
+        .social-link_gl {
+
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 48px;
+            height: 48px;
+        }
+
+        .social-link_fb {
+            background-image: url(../img/icons/sign-in-form/icon-facebook6.svg);
+            margin-right: 12px;
+        }
+
+        .social-link_gl {
+            background-image: url(../img/icons/sign-in-form/icon-google-plus.svg);
+        }
+
+    }
+
+
+    .text {
+        color: $light-text;
+        text-align: center;
+    }
+
+    .no-account {
+        text-align: center;
+        margin-top: 50px;
+
+
+    }
+}

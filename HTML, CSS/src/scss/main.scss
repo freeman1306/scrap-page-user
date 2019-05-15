@@ -1,13 +1,14 @@
 // @import "media/_include-media.scss";
 // @import "../../node_modules/fast-grid/_fast-grid.scss";
 
-@import 'helpers/variables';
 
+@import 'helpers/variables';
 @import 'helpers/mixins';
 @import 'base/typography';
 @import 'components/buttons';
 @import 'components/cards';
 @import 'components/inputs';
+@import 'components/form';
 @import 'base/global-styles';
-@import 'base/custom_styles';
+@import 'custom_styles';
 @import 'layout/media';
