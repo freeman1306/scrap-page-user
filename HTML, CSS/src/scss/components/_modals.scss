@@ -1,0 +1,87 @@
+// General for modals
+
+.modal-dialog {
+    padding: 80px 60px 48px;
+    position: relative;
+    box-shadow: $modal-shadow;
+    background-color: #fff;
+    height: fit-content;
+    pointer-events: all;
+
+    .modal-title {
+        margin-bottom: 32px;
+    }
+
+    .text {
+        color: $light-text;
+    }
+
+    .close {
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        font-size: 26px;
+        color: #BDBDBD;
+    }
+
+    .modal-header {
+        display: block;
+        text-align: center;
+
+    }
+
+    .modal-content {
+        border: none;
+        width: 340px;
+
+
+
+        [class*='modal'] {
+            border: none;
+        }
+    }
+}
+
+
+
+// Payments details Form
+
+.pay-details {
+
+
+
+    .type-card {
+        display: flex;
+        margin-bottom: 24px;
+
+    }
+
+    .modal-content {
+
+
+        .form-group {
+            margin-bottom: 24px;
+
+        }
+
+        .form-control {
+            height: calc(1.5em + .75rem + 9px);
+        }
+
+
+    }
+}
+
+// tell us form
+
+.tell-us-sport {
+    width: 686px;
+
+    #message-text {
+        height: 120px;
+    }
+}
+
+.tell-us-org {
+    width: 686px;
+}

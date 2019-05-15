@@ -41,9 +41,16 @@
 
 .custom-radio {
 
+    margin-right: 48px;
+    line-height: 2rem;
+
+    .custom-control-label {
+        right: -10px;
+    }
 
     .custom-control-label::before {
         border: 2px solid $neutral-one;
+        left: -37px;
 
     }
 
@@ -63,6 +70,7 @@
     .custom-control-label::after {
         width: 24px;
         height: 24px;
+        left: -37px;
     }
 
     .custom-control-input:checked~.custom-control-label::after {
@@ -127,7 +135,7 @@
     }
 
     &::placeholder {
-        color: $light-text;
+        color: $light-text !important;
         font-size: 16px;
         line-height: 19px;
     }
