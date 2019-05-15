@@ -33,7 +33,7 @@
 
 
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="inputs-blockk">
 
@@ -250,13 +250,13 @@
                 </div>
             </div>
 
-            <!-- <div class="modal-dialog tell-us-org" role="document">
+            <div class="modal-dialog tell-us-org" role="document">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
                 <div class="modal-content w-100">
                     <div class="modal-header">
-                        <h4 class=" h4 modal-title" >Tell us about your organization</h4>
+                        <h4 class=" h4 modal-title">Tell us about your organization</h4>
                         <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem
                             mollitia quidem rerum nulla at velit modi, excepturi, maiores facere nostrum eum? Quidem,
                             assumenda voluptates vitae eos beatae ratione aperiam est.</p>
@@ -264,18 +264,47 @@
                     <div class="modal-body">
                         <form>
                             <div class="form-group ">
-                                <label for="recipient-name" class="col-form-label h5">Name*</label>
-                                <input type="text" class="form-control" id="recipient-name" placeholder="Type name">
+                                <label for="name" class="col-form-label h5">Name*</label>
+                                <input type="text" class="form-control" id="name" placeholder="Type name">
                             </div>
                             <div class="form-group ">
-                                    <label for="recipient-name" class="col-form-label h5">Name*</label>
-                                    <input type="text" class="form-control" id="recipient-name" placeholder="Type name">
-                                </div>
-                                <div class="form-group ">
-                                        <label for="recipient-name" class="col-form-label h5">Name*</label>
-                                        <input type="text" class="form-control" id="recipient-name" placeholder="Type name">
-                                    </div>
-                           
+                                <label for="address" class="col-form-label h5">Address* <span
+                                        class="address-example">(e.g. 456 East
+                                        Street)</span></label>
+                                <input type="text" class="form-control" id="address" placeholder="Type name">
+                            </div>
+                            <div class="input-dropdown-container">
+                                <label for="city" class="col-form-label h5">City*</label>
+                                <input class="input input-dropdown w-100" id="city" type="text"
+                                    placeholder="Dropdown input" list="cities" />
+                                <datalist id="cities">
+                                    <option>Volvo</option>
+                                    <option>Saab</option>
+                                    <option>Mercedes</option>
+                                    <option>Audi</option>
+                                </datalist>
+                            </div>
+                            <div class="input-dropdown-container">
+                                <label for="country" class="col-form-label h5">Country*</label>
+                                <input class="input input-dropdown w-100" id="country" type="text"
+                                    placeholder="Dropdown input" list="countries" />
+                                <datalist id="countries">
+                                    <option>Volvo</option>
+                                    <option>Saab</option>
+                                    <option>Mercedes</option>
+                                    <option>Audi</option>
+                                </datalist>
+                            </div>
+
+                            <div class="form-group ">
+                                <label for="email" class="col-form-label h5">E-mail</label>
+                                <input type="text" class="form-control" id="email" placeholder="Type e-mail">
+                            </div>
+                            <div class="form-group ">
+                                <label for="number" class="col-form-label h5">Phone number</label>
+                                <input type="tel" class="form-control" id="number" placeholder="Type number">
+                            </div>
+
                         </form>
                     </div>
                     <div class="modal-footer">
@@ -286,65 +315,146 @@
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
+
+            <form class="modal-dialog cancelation shadow-none">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-content">
+                    <div class="modal-header p-0 ">
+                        <h5 class="h5 modal-title mb-4">Are you sure you want to cancel subscription?</h5>
+
+                    </div>
+                    <div class="modal-body p-0">
+
+                        <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, blanditiis
+                            temporibus. Suscipit, fugit animi! Nisi id at suscipit assumenda numquam magni sequi cum,
+                            natus cumque sapiente, provident enim ipsum nihil.</p>
 
 
+                    </div>
+                    <div class="modal-footer px-0">
 
+                        <div class="col pl-0"> <button type="button" class="btn btn-success w-100">SIGN IN </button>
+                        </div>
+                        <div class="col pr-0"> <button type="button" class="btn  btn-outline-success w-100"
+                                data-dismiss="modal">SIGN UP </button></div>
+                    </div>
+                </div>
+            </form>
+
+            <form class="modal-dialog cancelation-additiona shadow-none">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-content">
+                    <div class="modal-header p-0 ">
+                        <h5 class="h5 modal-title mb-4">Are you sure you want to cancel this additional athlete?</h5>
+
+                    </div>
+                    <div class="modal-body p-0">
+
+                        <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, blanditiis
+                            temporibus. Suscipit, fugit animi! Nisi id at suscipit assumenda numquam magni sequi cum,
+                            natus cumque sapiente, provident enim ipsum nihil.</p>
+
+
+                    </div>
+                    <div class="modal-footer px-0">
+
+                        <div class="col pl-0"> <button type="button" class="btn btn-success w-100">SIGN IN </button>
+                        </div>
+                        <div class="col pr-0"> <button type="button" class="btn  btn-outline-success w-100"
+                                data-dismiss="modal">SIGN UP </button></div>
+                    </div>
+                </div>
+            </form>
+
+
+            <form class="modal-dialog kid-pop-up shadow-none">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-content">
+                    <div class="modal-header p-0 ">
+                        <h4 class="h4 modal-title mb-4">Scrap Page for +1 kid</h4>
+                        <span class="subtitle">Monthly</span>
+                    </div>
+                    <div class="modal-body p-0">
+
+                        <p class="price">5$</p>
+
+                        <p class="text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                            nihil aperiam hic, illo quos officiis a inventore. Laudantium voluptatibus facere, expedita
+
+                        </p>
+
+
+                    </div>
+                    <div class="modal-footer px-0">
+
+                        <button type="button" class="btn btn-success w-100">SUBSCRIBE </button>
+
+
+                    </div>
+                </div>
+            </form>
 
 
 
         </div>
+    </div>
 
 
 
 
-
-        <!--[if lt IE 9]>
+    <!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
 	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
 
-        <script defer src="js/cssrelpreload.js"></script>
-        <!-- JQuery -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-        <!-- Bootstrap tooltips -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
-        </script>
-        <!-- Bootstrap core JavaScript -->
-        <script type="text/javascript"
-            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-        <!-- MDB core JavaScript -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.1/js/mdb.min.js">
-        </script>
-        <script src="js/svg4everybody.min.js"></script>
-        <script defer src="js/main.js"></script>
+    <script defer src="js/cssrelpreload.js"></script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
+    </script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.1/js/mdb.min.js">
+    </script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script defer src="js/main.js"></script>
 
-        <script>
-            $(document).ready(function () {
-                svg4everybody({});
-            });
+    <script>
+        $(document).ready(function () {
+            svg4everybody({});
+        });
 
-            // Example starter JavaScript for disabling form submissions if there are invalid fields
-            (function () {
-                'use strict';
-                window.addEventListener('load', function () {
-                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                    var forms = document.getElementsByClassName('needs-validation');
-                    // Loop over them and prevent submission
-                    var validation = Array.prototype.filter.call(forms, function (form) {
-                        form.addEventListener('submit', function (event) {
-                            if (form.checkValidity() === false) {
-                                event.preventDefault();
-                                event.stopPropagation();
-                            }
-                            form.classList.add('was-validated');
-                        }, false);
-                    });
-                }, false);
-            })();
-        </script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
 </body>
 
 </html>
